@@ -20,15 +20,21 @@ public class Ejemplo02 {
         int limite;
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ingrese el limite de "
-                + "generacion de los numeros aleatorios");
+                + "generacion de los numeros aleatorios, "
+                + "el limite debe ser positivo");
         limite = entrada.nextInt();
-        int valorA = obtenerNumero(limite); // 3
+        if (limite>0) {
+           int valorA = obtenerNumero(limite); // 3
         int valorB = obtenerNumero(limite); // 2
         int suma = obtnerSuma(valorA, valorB);
         System.out.printf("La suma de %d + %d es igual a: %d\n", 
                 valorA,
                 valorB,
-                suma);
+                suma); 
+        }else{
+            System.out.println("El numero debe ser positivo");
+        }
+        
     }
     
     public static int obtenerNumero(int limite) {
