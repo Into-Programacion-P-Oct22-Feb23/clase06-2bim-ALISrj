@@ -5,8 +5,9 @@
  */
 package ejemplos;
 
-import java.security.SecureRandom;
-// import java.security.*;
+//import java.security.SecureRandom;
+import java.security.*;
+import java.util.Scanner;
 
 /**
  *
@@ -16,8 +17,9 @@ public class Ejemplo01 {
     
     public static void main(String[] args) {
         // TODO code application logic here
-        int valorA = obtenerNumero(); // 3
-        int valorB = obtenerNumero(); // 2
+       
+        int valorA = obtenerNumero(); 
+        int valorB = obtenerNumero(); 
         int suma = obtnerSuma(valorA, valorB);
         System.out.printf("La suma de %d + %d es igual a: %d\n", 
                 valorA,
